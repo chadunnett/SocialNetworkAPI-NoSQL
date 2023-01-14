@@ -26,7 +26,7 @@ const thoughtSchema = new Schema(
         reactionBody: {
           type: String,
           required: true,
-          maxlength: 250
+          maxlength: 280
         },
         username: {
           type: String,
