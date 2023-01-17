@@ -21,7 +21,7 @@ const thoughtSchema = new Schema(
     reactions: {
         reactionId: {
           type: Schema.Types.ObjectId,
-          default: new ObjectId()
+          default: () => new Types.ObjectId(),
         },
         reactionBody: {
           type: String,
@@ -42,7 +42,7 @@ const thoughtSchema = new Schema(
     toJSON: {
       getters: true,
     },
-    id: false,
+    // id: false,
   }
 );
 
